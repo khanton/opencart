@@ -1,0 +1,40 @@
+version: "3"
+services:
+
+  db:
+    image: 'bitnami/mariadb:10.4'
+    environment:
+      - MARIADB_USER=opencart
+      - MARIADB_DATABASE=opencart
+      - MARIADB_PASSWORD=opencart
+      - MARIADB_ROOT_USER=admin
+      - MARIADB_ROOT_PASSWORD=admin
+    networks:
+     - app-tier
+    volumes:
+      - './db:/bitnami/mariadb/data'
+
+  php-fpm-mcrypt:
+    build: 
+      context: php-fpm-mcrypt
+    networks:
+      - app-tier
+    volumes:
+     - ./app:/app
+
+  nginx:
+    restart: always
+    image: nginx:alpine
+    ports:
+      - "9090:80"
+    networks:
+      - app-tier
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./app:/app
+    depends_on:
+      - php-fpm-mcrypt
+
+networks:
+  app-tier:
+    driver: bridge

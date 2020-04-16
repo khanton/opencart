@@ -1,0 +1,4 @@
+ocStore-3.0.2.0		https://sourceforge.net/projects/ocstore/files/ocStore-3.0.2.0.zip
+ocStore-2.3.0.2.3	https://sourceforge.net/projects/ocstore/files/ocStore-2.3.0.2.3.zip
+opencart-3.0.3.2	https://github.com/opencart/opencart/releases/download/3.0.3.2/opencart-3.0.3.2.zip
+opencart-2.3.0.2	https://github.com/opencart/opencart/releases/download/2.3.0.2/2.3.0.2-compiled.zip
