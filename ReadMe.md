@@ -23,3 +23,23 @@ opencart-2| Vanilla OpenCart 3 from https://opencart.com
 ```
 docker-compose up -d
 ```
+
+OpenCart ready to install on localhost:9090.
+
+Install params:
+Param| Value
+-|-
+Hostname| db
+Username| opencart
+Password| opencart
+Database| opencart
+Port|3306 (Default)
+Admin Username| admin 
+Admin password| admin
+Admin email | admin@admin.admin
+
+## Directory Structure
+Directory|Comment
+-|-
+./app | Application 
+./db | MySql database 
