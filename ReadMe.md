@@ -16,7 +16,7 @@ opencart-3| Vanilla OpenCart 3 from https://opencart.com
 opencart-2| Vanilla OpenCart 3 from https://opencart.com
 
 ```
-./install.sh ocStore-3
+./download.sh ocStore-3
 ```
 
 3. Start container set.
