@@ -11,9 +11,9 @@ git clone git@github.com:khanton/opencart.git
 Version List| Comment
 -|-
 ocStore-3| ocStore version 3 from https://ocstore.com
-ocStore-2| ocStore version 3 from https://ocstore.com
+ocStore-2| ocStore version 2 from https://ocstore.com
 opencart-3| Vanilla OpenCart 3 from https://opencart.com
-opencart-2| Vanilla OpenCart 3 from https://opencart.com
+opencart-2| Vanilla OpenCart 2 from https://opencart.com
 
 ```
 ./download.sh ocStore-3
